@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Encriptador de Texto</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <img src="C:\Users\fufus\OneDrive\Imágenes\Escritorio\Oracle_Curso\img\Logo.png">
+    </header>
+
+    <main class="encriptador">
+        <section class="encriptador_contenido">
+            <h1 class="encriptador_contenido_caja">
+            </h1>
+            <input type="string" id="textoUsuario" class="encriptador_contenido_caja_input"
+            placeholder = "Ingrese el texto aquí">
+
+            <p class = "avisoLetras">
+                (Solo minusculas y sin acentos)
+            </p>
+
+            <section class = "botonesAccion">
+                
+                <button class="encriptador_contenido_botonEncriptar">Encriptar</button>
+                <button class="encriptador_contenido_botonDesencriptar">Desencriptar</button>   
+                <button class="encriptador_contenido_botonBorrar"  onclick="limpiarTexto();" >Borrar Texto</button>   
+
+            </section>
+            
+        </section>
+
+        <section class="resultado_texto">
+            <img src="C:\Users\fufus\OneDrive\Imágenes\Escritorio\Oracle_Curso\img\Texto.png">
+
+            <strong class="resultado_texto_disclamerNoEncontrado"> Ningún mensaje encontrado
+            </strong></p>
+            <p class="resultado_texto_mensajeDesencriptado"> 
+                Ingresa el texto que desees encriptar o desencriptar 
+            </p>
+
+            <div class="resultado_texto_cuadrado"></div>
+        </section>
+        
+    </main>
+
+    <footer></footer>
+
+
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>
