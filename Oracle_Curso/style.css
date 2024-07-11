@@ -5,6 +5,7 @@
     --color-primario: #f2e6ff;
     --color-secundario: #400080;
     --color-terciario: #290033;
+    --color-hover: #7300e6;
 
     --fuente-inter: 'Inter', sans-serif;
 }
@@ -78,6 +79,12 @@ body {
     background-color: var(--color-secundario);
 }
 
+        .encriptador_contenido_botonEncriptar:hover{
+            background-color: var(--color-hover);
+        }
+
+
+
 .encriptador_contenido_botonDesencriptar{
     border: 3px solid var(--color-terciario);
     width: 250px;
@@ -91,11 +98,9 @@ body {
     background-color: var(--color-secundario);
 }
 
-.avisoLetras{
-    font-size: 12px;
-    font-family: var(--fuente-inter);
-    color:#495057;
-}
+        .encriptador_contenido_botonDesencriptar:hover{
+            background-color: var(--color-hover);
+        }
 
 .encriptador_contenido_botonBorrar{
     border: 3px solid var(--color-terciario);
@@ -109,7 +114,17 @@ body {
     background-color: var(--color-secundario);
 }
 
-.resultado_texto{
+        .encriptador_contenido_botonBorrar:hover{
+            background-color: var(--color-hover);
+        }
+
+.avisoLetras{
+    font-size: 12px;
+    font-family: var(--fuente-inter);
+    color:#495057;
+}
+
+.resultado{
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -119,6 +134,10 @@ body {
 }
 
 .resultado_texto_cuadrado{
+    display: flex;
+    align-content: flex-end;
+    align-items: flex-end;  
+    justify-content: center;
     height: 500px;
     width: 400px;
     border-radius: 9px;

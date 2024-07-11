@@ -27,20 +27,20 @@
 
             <section class = "botonesAccion">
                 
-                <button class="encriptador_contenido_botonEncriptar">Encriptar</button>
-                <button class="encriptador_contenido_botonDesencriptar">Desencriptar</button>   
-                <button class="encriptador_contenido_botonBorrar"  onclick="limpiarTexto();" >Borrar Texto</button>   
+                <button class="encriptador_contenido_botonEncriptar" onclick="encriptarTexto();"> Encriptar</button>
+                <button class="encriptador_contenido_botonDesencriptar" onclick="desencriptarTexto();"> Desencriptar</button>   
+                <button class="encriptador_contenido_botonBorrar"  onclick="limpiarTexto();" > Borrar Texto</button>   
 
             </section>
             
         </section>
 
-        <section class="resultado_texto">
-            <img src="C:\Users\fufus\OneDrive\Imágenes\Escritorio\Oracle_Curso\img\Texto.png">
+        <section class="resultado">
+            <img src="C:\Users\fufus\OneDrive\Imágenes\Escritorio\Oracle_Curso\img\Texto.png" id="imagenBuscandoLupa">
 
-            <strong class="resultado_texto_disclamerNoEncontrado"> Ningún mensaje encontrado
+            <strong class="resultado_texto_disclamerNoEncontrado" id="texto_disclaimer"> Ningún mensaje encontrado
             </strong></p>
-            <p class="resultado_texto_mensajeDesencriptado"> 
+            <p class="resultado_texto_mensajeDesencriptado" id="resultado_texto"> 
                 Ingresa el texto que desees encriptar o desencriptar 
             </p>
 
@@ -53,8 +53,8 @@
 
 
 
-    <script src="app.js"></script>
-
+    
 </body>
 
+<script src="app.js"></script>
 </html>
