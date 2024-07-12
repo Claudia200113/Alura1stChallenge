@@ -10,7 +10,7 @@ function limpiarTexto() {
 }
 
 function setDisable(nombreElemento){
-    document.getElementById(nombreElemento).style.display = "none";
+    document.getElementById(nombreElemento).style.visibility = "hidden";
 }
 
 function encriptarTexto() {
@@ -25,8 +25,6 @@ function encriptarTexto() {
     
     asignarTextoElemento('#resultado_texto', textoEncriptado);
 
-    /*document.getElementById("texto_disclaimer").style.display = "none";*/
-
     setDisable("texto_disclaimer");
     setDisable("imagenBuscandoLupa");
 
@@ -37,7 +35,7 @@ function encriptarTexto() {
 
 function desencriptarTexto() {
 
-    let textoEncriptado = document.getElementById('resultado_texto').textContent;
+    let textoEncriptado = document.getElementById('textoUsuario').textContent;
 
     let textoDesencriptado = textoEncriptado.replace(/enter/g, "e")
                                             .replace(/imes/g, "i")
@@ -48,6 +46,7 @@ function desencriptarTexto() {
     asignarTextoElemento('#resultado_texto', textoDesencriptado);
 
     console.log(textoDesencriptado);
+    limpiarTexto();
 }
 
 

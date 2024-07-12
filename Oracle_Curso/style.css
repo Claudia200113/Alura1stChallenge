@@ -137,14 +137,19 @@ body {
     display: flex;
     align-content: flex-end;
     align-items: flex-end;  
-    justify-content: center;
+    justify-content: flex-end;
+    position: absolute;
     height: 500px;
     width: 400px;
     border-radius: 9px;
-    position: absolute;
     background-color: white;
     border: 3px solid var(--color-secundario);
     z-index: -1;
+}
+
+.imagenBuscandoLupa{
+    height: 250px;
+    width: 290px;
 }
 
 .resultado_texto_disclamerNoEncontrado{
@@ -152,6 +157,7 @@ body {
     font-family: var(--fuente-inter);
     padding: 3% 0%;
     text-wrap: balance;
+    z-index: 1;
 }
 
 .resultado_texto_mensajeDesencriptado{
