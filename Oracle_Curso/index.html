@@ -11,7 +11,7 @@
 <body>
 
     <header class="header">
-        <img src="C:\Users\fufus\OneDrive\Imágenes\Escritorio\Oracle_Curso\img\Logo.png">
+        <img src="S:\GitHub\Alura1stChallenge\Oracle_Curso\img\Logo.png">
     </header>
 
     <main class="encriptador">
@@ -29,22 +29,23 @@
                 
                 <button class="encriptador_contenido_botonEncriptar" onclick="encriptarTexto();"> Encriptar</button>
                 <button class="encriptador_contenido_botonDesencriptar" onclick="desencriptarTexto();"> Desencriptar</button>   
-                <button class="encriptador_contenido_botonBorrar"  onclick="limpiarTexto();" > Borrar Texto</button>   
+                <button class="encriptador_contenido_botonBorrar"  onclick="botonBorrarTexto();" > Borrar Texto</button>   
+                <button class="encriptador_contenido_botonCopiar"  onclick="botonCopiarTexto();" > Copiar Texto</button>   
 
             </section>
             
         </section>
 
         <section class="resultado">
-            <img src="C:\Users\fufus\OneDrive\Imágenes\Escritorio\Oracle_Curso\img\Texto.png" id="imagenBuscandoLupa" class="imagenBuscandoLupa"> 
-
+            
             <strong class="resultado_texto_disclamerNoEncontrado" id="texto_disclaimer"> Ningún mensaje encontrado
             </strong></p>
             <p class="resultado_texto_mensajeDesencriptado" id="resultado_texto"> 
                 Ingresa el texto que desees encriptar o desencriptar 
             </p>
-
+            
             <div class="resultado_texto_cuadrado"></div>
+            <img src="S:\GitHub\Alura1stChallenge\Oracle_Curso\img\Texto.png" id="imagenBuscandoLupa" class="imagenBuscandoLupa"> 
         </section>
         
     </main>

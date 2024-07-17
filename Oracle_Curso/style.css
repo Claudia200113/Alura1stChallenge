@@ -22,57 +22,49 @@
 
 body {
     background:var(--color-primario);;
-    /*box-sizing: border-box;*/
 }
 
 .encriptador{
     display: flex;
-    justify-content: space-between;
-    padding: 5% 10%;
-    align-items: center;
-    width: 750px;
-    gap: 50px 30px;
+    justify-content: space-evenly;
+    padding: 3% 8%;
 }
 
 .encriptador_contenido{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     flex-direction: column;
-    gap: 30px;
+    gap: 2.5rem;
 }
 
 .encriptador_contenido_caja{
-    font-size: 32px;
+    font-size: 2rem;
     font-family: var(--fuente-inter);
 }
 
 .encriptador_contenido_caja_input{
-    font-size: 32px;
+    font-size: 2rem;
     font-family: var(--fuente-inter);
     color: var(--color-secundario);
     border: none;
-    text-decoration: none;
-    background:none;;
+    border-color: var(--color-hover);
+    background:none;
 }
-
-/*.avisoLetras{
-    align-content: flex-end;
-    align-items: flex-end;
-}*/
 
 .botonesAccion{
     display: flex;
-    justify-content: flex-start;
-    align-content: flex-end;
-    gap: 25px;  
+    align-content: space-around;
+    justify-content: space-around;
+    align-content: space-around;
+    gap: 10% 2%;  
 }
 
 .encriptador_contenido_botonEncriptar{
     border: 3px solid var(--color-terciario);
-    width: 250px;
+    width: 150%;
     text-align: center;
     border-radius: 9px;
-    font-size: 18px;
+    font-size: 1rem;
     font-weight: 500;
     text-decoration: none;
     color: var(--color-primario);
@@ -87,11 +79,11 @@ body {
 
 .encriptador_contenido_botonDesencriptar{
     border: 3px solid var(--color-terciario);
-    width: 250px;
+    width: 150%;
     padding: 6px;
     text-align: center;
     border-radius: 9px;
-    font-size: 18px;
+    font-size: 1rem;
     font-weight: 500;
     text-decoration: none;
     color: var(--color-primario);
@@ -104,10 +96,10 @@ body {
 
 .encriptador_contenido_botonBorrar{
     border: 3px solid var(--color-terciario);
-    width: 250px;
+    width: 150%;
     text-align: center;
     border-radius: 9px;
-    font-size: 18px;
+    font-size: 1rem;
     font-weight: 500;
     text-decoration: none;
     color: var(--color-primario);
@@ -118,8 +110,24 @@ body {
             background-color: var(--color-hover);
         }
 
+.encriptador_contenido_botonCopiar{
+     border: 3px solid var(--color-terciario);
+      width: 150%;
+      text-align: center;
+      border-radius: 9px;
+      font-size: 1rem;
+      font-weight: 500;
+      text-decoration: none;
+      color: var(--color-primario);
+      background-color: var(--color-secundario);
+}
+        
+      .encriptador_contenido_botonCopiar:hover{
+           background-color: var(--color-hover);
+       }
+
 .avisoLetras{
-    font-size: 12px;
+    font-size: 1rem;
     font-family: var(--fuente-inter);
     color:#495057;
 }
@@ -128,9 +136,10 @@ body {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    align-content: center;
+    align-content: stretch;
     align-items: center;
-    padding: 0% 10%;
+    padding: 0% 20%;
+    width: 100%;
 }
 
 .resultado_texto_cuadrado{
@@ -139,29 +148,34 @@ body {
     align-items: flex-end;  
     justify-content: flex-end;
     position: absolute;
-    height: 500px;
-    width: 400px;
+    height: 75%;
+    width: 30%;
     border-radius: 9px;
-    background-color: white;
+    background-color: #fff9ff;
     border: 3px solid var(--color-secundario);
     z-index: -1;
 }
 
 .imagenBuscandoLupa{
-    height: 250px;
-    width: 290px;
+    height: 70%;
+    width: 70%;
 }
 
 .resultado_texto_disclamerNoEncontrado{
-    font-size: 24px;
+    font-size: 1.5rem;
     font-family: var(--fuente-inter);
     padding: 3% 0%;
     text-wrap: balance;
     z-index: 1;
+    text-align: center;
 }
 
 .resultado_texto_mensajeDesencriptado{
-    font-size: 16px;
+    font-size: 1rem;
     font-family: var(--fuente-inter);
-    text-wrap: pretty;
+    word-break:break-word;
+    text-wrap: wrap;
+    height: 100px;
+    width: 110%;
+    text-align: center;
 }

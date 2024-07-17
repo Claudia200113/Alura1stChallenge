@@ -9,11 +9,29 @@ function limpiarTexto() {
     document.querySelector('#textoUsuario').value = '';
 }
 
+function setVisible(nombreElemento){
+    document.getElementById(nombreElemento).style.visibility = "visible";
+}
+
 function setDisable(nombreElemento){
     document.getElementById(nombreElemento).style.visibility = "hidden";
 }
 
+function botonBorrarTexto(){
+    document.querySelector('#textoUsuario').value = '';
+    document.querySelector('#resultado_texto').textContent = 'Ingresa el texto que desees encriptar o desencriptar';
+    setVisible("texto_disclaimer");
+    setVisible("imagenBuscandoLupa");
+}
+
+function botonCopiarTexto(){
+    textoACopiar = document.querySelector('#textoUsuario').value;
+}
+
 function encriptarTexto() {
+
+    //setVisible("texto_disclaimer");
+    //setVisible("imagenBuscandoLupa");
 
     let textoUsuario = document.getElementById('textoUsuario').value;
 
@@ -26,7 +44,7 @@ function encriptarTexto() {
     asignarTextoElemento('#resultado_texto', textoEncriptado);
 
     setDisable("texto_disclaimer");
-    setDisable("imagenBuscandoLupa");
+    setDisable("imagenBuscandoLupa"); 
 
     limpiarTexto();
 
@@ -35,7 +53,8 @@ function encriptarTexto() {
 
 function desencriptarTexto() {
 
-    let textoEncriptado = document.getElementById('textoUsuario').textContent;
+
+    let textoEncriptado = document.getElementById('textoUsuario').value;
 
     let textoDesencriptado = textoEncriptado.replace(/enter/g, "e")
                                             .replace(/imes/g, "i")
@@ -45,7 +64,6 @@ function desencriptarTexto() {
             
     asignarTextoElemento('#resultado_texto', textoDesencriptado);
 
-    console.log(textoDesencriptado);
     limpiarTexto();
 }
 
