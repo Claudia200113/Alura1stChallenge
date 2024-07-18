@@ -24,14 +24,19 @@ function botonBorrarTexto(){
     setVisible("imagenBuscandoLupa");
 }
 
-function botonCopiarTexto(){
-    textoACopiar = document.querySelector('#textoUsuario').value;
-}
+
+document.getElementById("botonCopiar").addEventListener("click", function() {
+
+    const texto = document.getElementById("resultado_texto").innerText;
+    const tempText = document.createElement("textarea");
+    tempText.value = texto;
+    document.body.appendChild(tempText);
+    tempText.select();
+    document.execCommand("copy");
+    document.body.removeChild(tempText);
+});
 
 function encriptarTexto() {
-
-    //setVisible("texto_disclaimer");
-    //setVisible("imagenBuscandoLupa");
 
     let textoUsuario = document.getElementById('textoUsuario').value;
 
