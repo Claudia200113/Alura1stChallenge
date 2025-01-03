@@ -2,6 +2,7 @@ The completed project is a text encryptor. The user can input a text, which will
 
 
 There are four main functionalities:
+
 	1.	Encrypt text - Receives the user’s text and replaces the vowels with certain letters.
  
 	2.	Decrypt text - Takes the already encrypted text and decrypts it so the user can see it in “normal” form.
