@@ -1,11 +1,10 @@
-El proyecto realizado es un encriptador de texto. El usuario puede ingresar un texto y este será encriptado, así como puede desencriptarlo en caso de requerirlo. 
+The completed project is a text encryptor. The user can input a text, which will be encrypted, and they can also decrypt it if needed.
+There are four main functionalities:
+	1.	Encrypt text - Receives the user’s text and replaces the vowels with certain letters.
+	2.	Decrypt text - Takes the already encrypted text and decrypts it so the user can see it in “normal” form.
+	3.	Delete text - Removes the displayed text and resets the page to default.
+	4.	Copy text - Copies the text from the result box to the clipboard, making it easier for the user to switch between encrypting and decrypting the input text.
 
-Hay 4 principales funcionalidades:
-  1. Encriptar texto - Recibe el texto del usuario y cambia las vocales por ciertas letras.
-  2. Desencriptar texto - Toma el texto que ya fue encriptado y lo desencripta para que el usuario pueda verlo "normal".
-  3. Borrar texto - Eliminará el texto mostrado y volvera a default la página.
-  4. Copiar texto - Copiará el texto que se encuentre en la caja de resultado al portapapeles. Esto para facilitar que el usuario pueda cambiar entre encriptar y desencriptar el texto ingresado.
+Note: The encryptor only works if the input text does not contain uppercase letters and/or accents.
 
-Nota: El encriptador solamente funciona si el texto recibido no cuenta con mayusculas y/o acentos. 
-
-Autora: Claudia Rodríguez Meza, como parte del challenge "Encriptador de texto". 
+Author: Claudia Rodríguez
